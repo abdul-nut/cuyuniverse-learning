@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex justify-center items-center min-h-screen bg-gray-800">
+      <!-- LAMPU 1 -->
+      <div class="flex flex-col gap-2 mx-10">
+        <img id="lampu1" src="assets/images/off.gif" alt="" />
+        <button class="bg-white p-4 text-black" onclick="saklar(1)">
+          SAKLAR LAMPU
+        </button>
+      </div>
+      <!-- LAMPU 1 END -->
+
+      <!-- LAMPU 2 -->
+      <div class="flex flex-col gap-2 mx-10">
+        <img id="lampu2" src="assets/images/off.gif" alt="" />
+        <button class="bg-white p-4 text-black" onclick="saklar(2)">
+          SAKLAR LAMPU
+        </button>
+      </div>
+      <!-- LAMPU 2 END -->
+
+      <!-- LAMPU 3 -->
+      <div class="flex flex-col gap-2 mx-10">
+        <img id="lampu3" src="assets/images/off.gif" alt="" />
+
+        <button class="bg-white p-4 text-black" onclick="saklar(3)">
+          SAKLAR LAMPU
+        </button>
+      </div>
+      <!-- LAMPU 3 END -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
