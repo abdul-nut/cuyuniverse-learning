@@ -14,21 +14,23 @@
     />
   </head>
   <body>
-    <!-- RUMAH -->
-    <div
-      class="flex min-h-screen bg-blue-800 grid grid-cols-2 md:grid-cols-3 gap-4"
-      id="rumah"
-    >
-      <!-- RUANG KELUARGA -->
-      <div class="flex flex-col">
-        <div
-          class="flex mt-3 ml-3 h-48 max-w-full rounded-lg bg-black items-center"
-        >
-          <!-- LAMPU 1 -->
-          <div class="flex flex-col gap-2 mx-10 items-center">
-            <img id="lampu1" src="assets/images/off.gif" alt="" />
-
-            <label class="inline-flex items-center cursor-pointer">
+    <div>
+      <div
+        class="flex flex-col grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 items-center justify-center"
+      >
+        <!-- RUANG KELUARGA END -->
+        <div class="flex flex-col">
+          <div class="mt-3 ml-3 h-48 max-w-lg rounded-lg bg-black items-center">
+            <div class="flex items-center justify-center">
+              <!-- LAMPU 1 -->
+              <div class="flex flex-col gap-2 mx-10 items-center">
+                <img id="lampu1" src="assets/images/off.gif" alt="" />
+              </div>
+              <!-- LAMPU 1 END -->
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <label class="cursor-pointer">
               <input
                 type="checkbox"
                 class="sr-only peer"
@@ -40,62 +42,226 @@
               ></div>
             </label>
           </div>
-          <!-- LAMPU 1 END -->
+        </div>
+        <!-- RUANG KELUARGA -->
+        <div class="flex flex-col">
+          <div
+            class="flex mt-3 ml-3 h-48 max-w-full rounded-lg bg-black items-center"
+          >
+            <!-- LAMPU 1 -->
+            <div class="flex flex-col gap-2 mx-10 items-center">
+              <img id="lampu2" src="assets/images/off.gif" alt="" />
 
-          <!-- LAMPU 2 -->
-          <div class="flex flex-col gap-2 mx-10 items-center">
-            <img id="lampu2" src="assets/images/off.gif" alt="" />
-            <label class="inline-flex items-center cursor-pointer">
+              <label class="inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  class="sr-only peer"
+                  id="default-toggle"
+                  onchange="saklar(2)"
+                />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+            </div>
+            <!-- LAMPU 1 END -->
+
+            <!-- LAMPU 2 -->
+            <div class="flex flex-col gap-2 mx-10 items-center">
+              <img id="lampu3" src="assets/images/off.gif" alt="" />
+              <label class="inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  class="sr-only peer"
+                  id="default-toggle"
+                  onchange="saklar(3)"
+                />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+            </div>
+            <!-- LAMPU 2 END -->
+
+            <!-- LAMPU 3 -->
+            <div class="flex flex-col gap-2 mx-10 items-center">
+              <img id="lampu4" src="assets/images/off.gif" alt="" />
+
+              <label class="inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  class="sr-only peer"
+                  id="default-toggle"
+                  onchange="saklar(4)"
+                />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+            </div>
+            <!-- LAMPU 3 END -->
+          </div>
+          <div id="semua" class="flex items-center justify-center mt-1">
+            <label class="cursor-pointer">
               <input
                 type="checkbox"
                 class="sr-only peer"
-                id="default-toggle"
-                onchange="saklar(2)"
+                id="keluarga"
+                onchange="saklarRuang(1)"
               />
               <div
                 class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
               ></div>
             </label>
           </div>
-          <!-- LAMPU 2 END -->
+        </div>
 
-          <!-- LAMPU 3 -->
-          <div class="flex flex-col gap-2 mx-10 items-center">
-            <img id="lampu3" src="assets/images/off.gif" alt="" />
+        <!-- RUANG KELUARGA -->
+        <div class="flex flex-col">
+          <div
+            class="flex mt-3 ml-3 h-48 max-w-full rounded-lg bg-black items-center"
+          >
+            <!-- LAMPU 1 -->
+            <div class="flex flex-col gap-2 mx-10 items-center">
+              <img id="lampu5" src="assets/images/off.gif" alt="" />
 
-            <label class="inline-flex items-center cursor-pointer">
+              <label class="inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  class="sr-only peer"
+                  id="default-toggle"
+                  onchange="saklar(5)"
+                />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+            </div>
+            <!-- LAMPU 1 END -->
+
+            <!-- LAMPU 2 -->
+            <div class="flex flex-col gap-2 mx-10 items-center">
+              <img id="lampu6" src="assets/images/off.gif" alt="" />
+              <label class="inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  class="sr-only peer"
+                  id="default-toggle"
+                  onchange="saklar(6)"
+                />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+            </div>
+            <!-- LAMPU 2 END -->
+
+            <!-- LAMPU 3 -->
+            <div class="flex flex-col gap-2 mx-10 items-center">
+              <img id="lampu7" src="assets/images/off.gif" alt="" />
+
+              <label class="inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  class="sr-only peer"
+                  id="default-toggle"
+                  onchange="saklar(7)"
+                />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+            </div>
+            <!-- LAMPU 3 END -->
+            <!-- LAMPU 3 -->
+            <div class="flex flex-col gap-2 mx-10 items-center">
+              <img id="lampu8" src="assets/images/off.gif" alt="" />
+
+              <label class="inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  class="sr-only peer"
+                  id="default-toggle"
+                  onchange="saklar(8)"
+                />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+            </div>
+            <!-- LAMPU 3 END -->
+          </div>
+          <div id="semua" class="flex items-center justify-center mt-1">
+            <label class="cursor-pointer">
               <input
                 type="checkbox"
                 class="sr-only peer"
-                id="default-toggle"
-                onchange="saklar(3)"
+                id="ruangmakan"
+                onchange="saklarRuang(2)"
               />
               <div
                 class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
               ></div>
             </label>
           </div>
-          <!-- LAMPU 3 END -->
         </div>
-        <div id="semua" class="flex items-center justify-center mt-1">
-          <label class="cursor-pointer">
-            <input
-              type="checkbox"
-              class="sr-only peer"
-              id="keluarga"
-              onchange="saklarRuang(1)"
-            />
-            <div
-              class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
-            ></div>
-          </label>
-        </div>
+        <!-- RUANG MAKAN END -->
       </div>
 
-      <!-- RUANG KELUARGA END -->
+      <div class="flex justify-center items-center">
+        <div class="flex flex-col">
+          <div class="mt-3 ml-3 h-90 max-w-lg rounded-lg bg-black items-center">
+            <div class="flex items-center justify-center">
+              <!-- LAMPU 1 -->
+              <div class="flex flex-col gap-2 mx-10 items-center">
+                <img id="lampu9" src="assets/images/off.gif" alt="" />
+                <label class="inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    class="sr-only peer"
+                    id="default-toggle"
+                    onchange="saklar(9)"
+                  />
+                  <div
+                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+              <!-- LAMPU 1 END -->
+              <!-- LAMPU 1 -->
+              <div class="flex flex-col gap-2 mx-10 items-center">
+                <img id="lampu10" src="assets/images/off.gif" alt="" />
+                <label class="inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    class="sr-only peer"
+                    id="default-toggle"
+                    onchange="saklar(10)"
+                  />
+                  <div
+                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                  ></div>
+                </label>
+              </div>
+              <!-- LAMPU 1 END -->
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <label class="cursor-pointer">
+              <input
+                type="checkbox"
+                class="sr-only peer"
+                id="ruangtidur"
+                onchange="saklarRuang(3)"
+              />
+              <div
+                class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- RUMAH END -->
 
     <script src="script.js"></script>
   </body>
