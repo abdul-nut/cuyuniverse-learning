@@ -16,6 +16,11 @@ body{
     color: white;
 }
 
+.pdi {
+    background-color: red;
+    color: black;
+}
+
 .container{
     display: flex;
     justify-content: center;
