@@ -1,0 +1,64 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary: #222;
+  --bg-secondary: #7ebd7c;
+  --webkit-box-shadow: 5px 6px 27px -8px rgba(255, 255, 255, 1);
+  --moz-box-shadow: 5px 6px 27px -8px rgba(255, 255, 255, 1);
+  --box-shadow: 9px 8px 27px -8px rgba(255, 255, 255, 1);
+  --txt-primary: #f7f7f7;
+  --txt-secondary: #2222;
+}
+
+.fa {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  color: var(--txt-primary);
+  padding: 20px;
+  margin: 8px;
+  -webkit-box-shadow: var(--webkit-box-shadow);
+  -moz-box-shadow: var(--moz-box-shadow);
+  box-shadow: var(--box-shadow);
+  border-radius: 20px;
+  background-color: var(--bg-primary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  margin-top: 8px;
+}
+
+.desc {
+  margin-top: 4px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--bg-primary);
+  color: var(--txt-primary);
+  cursor: pointer;
+}
